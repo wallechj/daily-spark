@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日灵感 · Daily Spark</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="logo">✦ Daily Spark</div>
+  <div class="topbar-right">
+    <span class="date" id="todayDate"></span>
+    <button class="theme-btn" id="themeBtn" title="切换主题">🌙</button>
+  </div>
+</header>
+
+<main>
+  <section class="quote-card">
+    <div class="quote-label">今日灵感</div>
+    <p class="quote-zh" id="quoteZh">加载中…</p>
+    <p class="quote-en" id="quoteEn"></p>
+    <button class="ghost-btn" id="newQuoteBtn">换一句 ↻</button>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>🍅 专注番茄钟</h2>
+      <div class="timer" id="timerDisplay">25:00</div>
+      <div class="timer-btns">
+        <button class="primary-btn" id="timerToggle">开始专注</button>
+        <button class="ghost-btn" id="timerReset">重置</button>
+      </div>
+      <p class="hint">今日已完成 <b id="doneCount">0</b> 个番茄</p>
+    </div>
+
+    <div class="card">
+      <h2>🌟 今日小确幸</h2>
+      <form id="joyForm">
+        <input type="text" id="joyInput" maxlength="60" placeholder="今天有什么开心的小事？">
+        <button class="primary-btn" type="submit">记下</button>
+      </form>
+      <ul class="joy-list" id="joyList"></ul>
+    </div>
+  </section>
+
+  <section class="card stats">
+    <h2>📊 灵感足迹</h2>
+    <p>你已经收集了 <b id="quoteCount">0</b> 条灵感 · 完成了 <b id="focusTotal">0</b> 个番茄 · 记录了 <b id="joyTotal">0</b> 件小确幸</p>
+    <p class="hint">每一次打开，都在变好一点点。</p>
+  </section>
+</main>
+
+<footer>
+  <p>Daily Spark · made with ☕ · <span id="version">v0.1.0</span></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
