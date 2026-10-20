@@ -44,7 +44,9 @@ main { max-width: 880px; margin: 0 auto; padding: 8px 24px 40px; display: grid; 
 .quote-card {
   background: var(--card); border: 1px solid var(--line); border-radius: 20px;
   padding: 44px 36px; text-align: center; box-shadow: var(--shadow);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
+.quote-card:hover { transform: translateY(-3px); }
 .quote-label {
   display: inline-block; font-size: 13px; color: var(--accent);
   background: var(--accent-soft); border-radius: 999px; padding: 5px 16px; margin-bottom: 20px;
