@@ -1,10 +1,13 @@
 {
-  "last_commit": "2026-10-26",
+  "last_commit": "2026-10-28",
   "next_gap_days": 2,
   "used_quotes": [
+    5,
     7,
+    17,
     18,
-    27
+    27,
+    28
   ],
-  "last_type": "version"
+  "last_type": "quotes"
 }
